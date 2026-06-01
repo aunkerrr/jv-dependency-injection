@@ -27,9 +27,9 @@ public class Injector {
         Class<?> clazz = interfaceImplementations.get(interfaceClazz);
 
         if (clazz == null) {
-            throw new RuntimeException("Interface realization"
+            throw new RuntimeException("Interface realization "
                     + interfaceClazz.getName()
-                    + "not found");
+                    + " not found");
         }
 
         if (instances.containsKey(clazz)) {
